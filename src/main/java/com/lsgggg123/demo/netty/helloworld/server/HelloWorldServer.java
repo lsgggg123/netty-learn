@@ -1,6 +1,6 @@
-package com.lsgggg123.demo.netty.server;
+package com.lsgggg123.demo.netty.helloworld.server;
 
-import com.lsgggg123.demo.netty.handler.HelloWorldChannelInitializer;
+import com.lsgggg123.demo.netty.helloworld.handler.HelloWorldChannelInitializer;
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.ChannelFuture;
 import io.netty.channel.EventLoopGroup;

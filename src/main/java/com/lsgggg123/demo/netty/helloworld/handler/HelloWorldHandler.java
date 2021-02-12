@@ -1,4 +1,4 @@
-package com.lsgggg123.demo.netty.handler;
+package com.lsgggg123.demo.netty.helloworld.handler;
 
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;
