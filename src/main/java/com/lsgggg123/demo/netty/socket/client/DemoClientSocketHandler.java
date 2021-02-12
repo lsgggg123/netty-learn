@@ -4,7 +4,6 @@ import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;
 
 import java.time.LocalTime;
-import java.util.UUID;
 
 public class DemoClientSocketHandler extends SimpleChannelInboundHandler<String> {
 
