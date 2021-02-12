@@ -1,4 +1,4 @@
-package com.lsgggg123.demo.netty.socket.handler;
+package com.lsgggg123.demo.netty.socket.server;
 
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;

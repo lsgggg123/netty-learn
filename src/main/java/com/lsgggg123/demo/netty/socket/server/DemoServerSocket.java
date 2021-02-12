@@ -1,6 +1,5 @@
 package com.lsgggg123.demo.netty.socket.server;
 
-import com.lsgggg123.demo.netty.socket.handler.DemoServerSocketChannelInitializer;
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.ChannelFuture;
 import io.netty.channel.EventLoopGroup;

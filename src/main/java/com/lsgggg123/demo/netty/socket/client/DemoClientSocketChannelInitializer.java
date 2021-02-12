@@ -1,4 +1,4 @@
-package com.lsgggg123.demo.netty.socket.handler;
+package com.lsgggg123.demo.netty.socket.client;
 
 import io.netty.channel.ChannelInitializer;
 import io.netty.channel.ChannelPipeline;
@@ -9,7 +9,7 @@ import io.netty.handler.codec.string.StringDecoder;
 import io.netty.handler.codec.string.StringEncoder;
 import io.netty.util.CharsetUtil;
 
-public class DemoServerSocketChannelInitializer extends ChannelInitializer<SocketChannel> {
+public class DemoClientSocketChannelInitializer extends ChannelInitializer<SocketChannel> {
     @Override
     protected void initChannel(SocketChannel ch) throws Exception {
         ChannelPipeline pipeline = ch.pipeline();
@@ -17,6 +17,6 @@ public class DemoServerSocketChannelInitializer extends ChannelInitializer<Socke
         pipeline.addLast("lengthFieldPrepender", new LengthFieldPrepender(4));
         pipeline.addLast("stringDecoder", new StringDecoder(CharsetUtil.UTF_8));
         pipeline.addLast("stringEncoder", new StringEncoder(CharsetUtil.UTF_8));
-        pipeline.addLast("demoSocketServerHandler", new DemoServerSocketHandler());
+        pipeline.addLast("demoClientSocketHandler", new DemoClientSocketHandler());
     }
 }
