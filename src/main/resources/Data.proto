@@ -1,0 +1,11 @@
+syntax = "proto3";
+package Data;
+
+option java_package = "com.lsgggg123.demo.netty.proto";
+option java_outer_classname = "DataInfo";
+
+message Data {
+  optional string name = 1;
+  optional int32 age = 2;
+  optional string address = 3;
+}
