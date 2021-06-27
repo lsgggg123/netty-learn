@@ -1,0 +1,1 @@
+this is a String using file channel to write into a file
