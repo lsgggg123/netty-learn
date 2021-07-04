@@ -16,6 +16,7 @@ public class HelloWorldServer {
             serverBootstrap
                     .group(bossGroup, workerGroup)
                     .channel(NioServerSocketChannel.class)
+                    // .handler(null) 对 boss group 起作用
                     .childHandler(new HelloWorldChannelInitializer());
             ChannelFuture channelFuture = serverBootstrap.bind(8899).sync();
             channelFuture.channel().closeFuture().sync();
